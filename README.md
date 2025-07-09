@@ -31,10 +31,12 @@ git clone https://github.com/creatobg/speed-test.git
 
 3. **Алтернатива с `curl` в терминал:**
 
-   ```bash
-   curl -o /dev/null -s -w "DNS: %{time_namelookup}s\nConnect: %{time_connect}s\nStart Transfer: %{time_starttransfer}s\nTotal: %{time_total}s\n" https://domain1.bg/speed-test/index.html
-
-   curl -o /dev/null -s -w "DNS: %{time_namelookup}s\nConnect: %{time_connect}s\nStart Transfer: %{time_starttransfer}s\nTotal: %{time_total}s\n" https://domain2.bg/speed-test/index.html
-   ```
+```bash
+curl -o /dev/null -s -w "DNS: %{time_namelookup}s\nConnect: %{time_connect}s\nStart Transfer: %{time_starttransfer}s\nTotal: %{time_total}s\n" https://domain1.bg/speed-test/index.html
+```
+   
+```bash
+curl -o /dev/null -s -w "DNS: %{time_namelookup}s\nConnect: %{time_connect}s\nStart Transfer: %{time_starttransfer}s\nTotal: %{time_total}s\n" https://domain2.bg/speed-test/index.html
+```
 
 Този проект е създаден за вътрешно тестване и сравнение на производителността между различни хостинг решения и/или CDN услуги. Уеб страницата съдържа изображения с достатъчен обем, за да бъдат забелязани разлики в: време за зареждане, кеширане, компресия, и скорост на доставка.
